@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
-public class WeatherForecastController : BaseApiController 
+public class WeatherForecastController : BaseApiController
 {
     private static readonly string[] Summaries = new[]
     {
@@ -22,7 +22,7 @@ public class WeatherForecastController : BaseApiController
         {
             Date = DateTime.Now.AddDays(index),
             TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = "Hello World" 
+            Summary = "Hello World"
         })
         .ToArray();
     }
